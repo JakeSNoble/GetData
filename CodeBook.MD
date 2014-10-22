@@ -53,19 +53,31 @@ to denote the time domain.  The other has an 'f' prefix to denote the frequency
 domain, this value is obtained using a fast fourier transformation.
 
 BodyAccMag-mean(): mean value for the mean of the magnitude of the body accelleration
+
 BodyAccMag-std(): mean value for the stdev of the magnitude of the body accelleration
+
 BodyAccJerkMag-mean():mean value for the mean of the magnitude of Jerks measured
+
 BodyAccJerkMag-std():mean value for the stdev of the magnitude of Jerks measured
+
 BodyGyroMag-mean(): mean value for the mean of the magnitude of the angular acceleration
+
 BodyGyroMag-std(): mean value for the stdev of the magnitude of the angular acceleration
+
 BodyGyroJerkMag-mean(): mean value for the mean of the magnitude of the angular Jerks measured
+
 BodyGyroJerkMag-std(): mean value for the stdev of the magnitude of the angular Jerks measured
 
 angle(tBodyAccMean,gravity):the mean value for the angle between the body accelleration vector and the downward gravity vector
+
 angle(tBodyGyroMean,gravityMean): mean value for the angle between the gyroscopic mean vector and gravity vector
+
 angle(tBodyGyroJerkMean,gravityMean): mean value for the angle beteen the body jerk vector and gravity vector
+
 angle(X,gravityMean):mean value for the angle between the x component of acceleration and the gravity vector
+
 angle(Y,gravityMean):mean value for the angle between the y component of acceleration and the gravity vector
+
 angle(Z,gravityMean):mean value for the angle between the z component of acceleration and the gravity vector
 
 ##Setps I took to create a tidy data set:
