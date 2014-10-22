@@ -5,7 +5,7 @@ Version 1.0
 ==================================================================
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
-DITEN - Universit‡ degli Studi di Genova.
+DITEN - Universit√† degli Studi di Genova.
 Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
 www.smartlab.ws
@@ -72,18 +72,33 @@ angle(Z,gravityMean):mean value for the angle between the z component of acceler
 
 1) unzip files downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip, 
 and saved them to "C:/Coursera/Getting and Cleaning Data/Course Project"
+
 2) In R studio create a script called run_analysis.R
+
 3) create a variable to hold the activity labels, 'ActLabs'
+
 4) read the features file into a variable named 'Features'
+
 5) remove the numeric component of the feature name to improve appearance
+
 6) create a vector of column numbers that have relevant/desired information based on visual inspection of features.
+
 7) read the test data into a variable called 'test'
+
 8) redefine 'test' as a subset of 'test' with only the desired columns
+
 9) assign the columns of test the feature names subsetted appropriately
+
 10) read the y_test.txt file to extract the vector of activities each observation refers to.
+
 11) read the subject_test.txt file to extract the vector of subjects who preformed each observation.
+
 12) bind the subject and activity vectors to the test data frame with cbind.
+
 13) repeat steps 7-12 for the train data.
+
 14) rbind the test data and train data to create a new 'data' data frame with 10299 observations of 25 variables.
+
 15) replace the numeric values in the activities column with the 'ActLabs' vlaues created in step 1 and define it as a factor
+
 16) create a new tidy data set called 'datasum' by summarising each subject and activity combination by taking the mean of all observed instances for each subject activity combination.
