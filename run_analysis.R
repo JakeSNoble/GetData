@@ -63,5 +63,5 @@ data$activity <- factor(data$activity,levels=c(1,2,3,4,5,6),labels=ActLabs)
 
 library(dplyr)
 dataSum <- summarise_each(grouped_df(data,list("subject","activity")),funs(mean))
-repo <- file("C:/Coursera/Getting and Cleaning Data/Course Project/GetData/datasum.csv",open="w")
-write.csv(dataSum,file=repo)
+repo <- file("C:/Coursera/Getting and Cleaning Data/Course Project/GetData/datasum.txt",open="w")
+write.table(dataSum,file=repo)
